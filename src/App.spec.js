@@ -612,8 +612,9 @@ test ('successfully renders data from API', async () => {
 
     const { findByAltText } = render(<App />)
 
-     //await waitFor(() => {
-        // expect(findByAltText(/stranger things/i)).toBeInTheDocument()
-     //});
+    findByAltText(/stranger things/i)
 
-     expect(mockFetchShow).toHaveBeenCalled();
+    expect(mockFetchShow).toHaveBeenCalled();
+    
+
+    })
